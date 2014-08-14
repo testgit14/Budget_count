@@ -15,8 +15,31 @@
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">25dp</item>
         <item name="android:gravity">center</item>
-        <item name = "android:paddingTop">5dp</item>
+        <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
         <item name="android:layout_marginTop">@dimen/custom_top</item>
     </style>
+
+    <style name="CustomButtonBase" parent="android:Widget.Button"/>
+    <style name="NavigationButton" parent="CustomButtonBase">
+        <!--<item name="android:layout_width">@dimen/nav_button_width</item>-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="NavigationButton.Left" parent="NavigationButton">
+        <item name="android:layout_marginLeft">10dp</item>
+        <!--<item name="android:layout_gravity">left</item>-->
+    </style>
+
+    <style name="NavigationButton.Right" parent="NavigationButton">
+        <item name="android:layout_marginRight">10dp</item>
+        <!--<item name="android:layout_gravity">right</item>-->
+    </style>
+
 </resources>
